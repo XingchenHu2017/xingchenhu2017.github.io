@@ -1,7 +1,7 @@
 ---
 layout: archive-dates
-permalink: /publications/
-title: Publications
+permalink: /dates/
+title: Dates
 ---
 # Publications
 
