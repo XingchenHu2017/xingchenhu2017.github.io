@@ -1,7 +1,5 @@
 ---
-layout: home
+layout: archive-publications
 permalink: /publications/
 title: Publications
 ---
-
-{% include publications.html %}
