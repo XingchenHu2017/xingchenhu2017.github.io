@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | escape }} - {{ site.title | escape }}</title>
+  <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+  {%- if site.google_analytics -%}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '{{ site.google_analytics }}');
+    </script>
+  {%- endif -%}
+  {%- seo -%}
+</head>
+<body>
+  <header>
+    {% include header.html %}
+  </header>
+  <main>
+    <div class="content">
+      <h1>{{ page.title }}</h1>
+      {% include publications.html %}
+    </div>
+  </main>
+  <footer>
+    {% include footer.html %}
+  </footer>
+</body>
+</html>
