@@ -4,9 +4,16 @@
     <ul class="home-header-menu pure-menu-list">
       {% for item in site.data.archive %}
         <li class="pure-menu-item">
-          <a href="{{ item.url | relative_url }}" class="pure-menu-link {% if page.url == item.url %}current-item{% endif %}"">{{ item.title }}</a>
+          <a href="{{ item.url | relative_url }}" class="pure-menu-link {% if page.url == item.url %}current-item{% endif %}">{{ item.title }}</a>
         </li>
       {% endfor %}
+      <!-- 添加 Publications 和 Services 链接 -->
+      <li class="pure-menu-item">
+        <a href="{{ '/publications/' | relative_url }}" class="pure-menu-link {% if page.url == '/publications/' %}current-item{% endif %}">Publications</a>
+      </li>
+      <li class="pure-menu-item">
+        <a href="{{ '/services/' | relative_url }}" class="pure-menu-link {% if page.url == '/services/' %}current-item{% endif %}">Services</a>
+      </li>
     </ul>
     {% endif %}
   </div>
