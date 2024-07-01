@@ -4,22 +4,41 @@ layout: default
 
 {% include home-header.html %}
 
-<div class="posts">
-  <div class="post-list">
-    <h2>欢迎访问我的网站</h2>
-    <p>这里是我的个人博客，您可以在这里找到各种有趣的内容。</p>
+<div class="content">
+  <h1>Xingchen Hu</h1>
+  
+  <div class="affiliation">
+    <p>College of Systems Engineering<br>
+    Laboratory for Big Data and Decision<br>
+    National University of Defence Technology</p>
   </div>
-</div>
+  
+  <div class="contact">
+    <p>
+      <a href="mailto:xhu4@ualberta.ca">xhu4@ualberta.ca</a><br>
+      <a href="mailto:xingchenhu@nudt.edu.cn">xingchenhu@nudt.edu.cn</a>
+    </p>
+  </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+  <h2>Education</h2>
+  <ul>
+    <li><strong>Ph.D.</strong> Software Engineering and Intelligent Systems, University of Alberta, Edmonton, Canada, 2017</li>
+    <li><strong>M.E.</strong> Control Science and Engineering, National University of Defence Technology, Changsha, China, 2013</li>
+    <li><strong>B.E.</strong> Flight Vehicle Design and Engineering, Beihang University, Beijing, China, 2011</li>
+  </ul>
+
+  <h2>Professional Experience</h2>
+  <ul>
+    <li><strong>2020–present:</strong> National University of Defence Technology, Associate Professor, College of Systems Engineering</li>
+    <li><strong>2018–2020:</strong> National University of Defence Technology, Assistant Professor, College of Systems Engineering</li>
+  </ul>
+
+  <h2>Research Areas</h2>
+  <ul>
+    <li>Computational intelligence</li>
+    <li>Granular computing</li>
+    <li>Multi-view clustering</li>
+    <li>Federated learning</li>
+    <li>Evolutionary optimization</li>
+  </ul>
 </div>
