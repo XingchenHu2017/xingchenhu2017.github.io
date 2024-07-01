@@ -1,16 +1,13 @@
 <div class="home-header pure-menu pure-menu-horizontal">
   <div class="home-header-bar">
+    {% if site.data.archive %}
     <ul class="home-header-menu pure-menu-list">
-      <li class="pure-menu-item">
-        <a class="pure-menu-link" href="/dates/">Dates</a>
-      </li>
-      <li class="pure-menu-item">
-        <a class="pure-menu-link" href="/tags/">Tags</a>
-      </li>
-      <!-- 添加新的列表项或文字 -->
-      <li class="pure-menu-item">
-        <span>这里是您要添加的文字。</span>
-      </li>
+      {% for item in site.data.archive %}
+        <li class="pure-menu-item">
+          <a href="{{ item.url | relative_url }}" class="pure-menu-link {% if page.url == item.url %}current-item{% endif %}"">{{ item.title }}</a>
+        </li>
+      {% endfor %}
     </ul>
+    {% endif %}
   </div>
 </div>
