@@ -1,7 +1,5 @@
 ---
-layout: home
+layout: archive-services
 permalink: /services/
 title: Services
 ---
-
-{% include services.html %}
