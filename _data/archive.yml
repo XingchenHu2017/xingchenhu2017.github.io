@@ -1,4 +1,7 @@
-- type: dates
+- type: publications
   title: Publications
   url: /publications/
 
+- type: services
+  title: Services
+  url: /services/
