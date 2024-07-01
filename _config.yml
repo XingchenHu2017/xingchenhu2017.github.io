@@ -27,7 +27,7 @@ exclude:
   - scripts/
   - not-pure-poole.gemspec
 
-# Optimize Jekyl SEO Tag
+# Optimize Jekyll SEO Tag
 
 logo: logo.png
 social:
