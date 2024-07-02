@@ -15,12 +15,25 @@
   <div class="masthead-tagline">
     <small>{{ site.description }}</small>
   </div>
+  <!-- 添加 Associate Professor 和 National University of Defence Technology -->
+  <div class="masthead-position">
+    <small>Associate Professor</small><br>
+    <small>National University of Defence Technology</small>
+  </div>
   {%- if site.data.navigation -%}
   <nav class="navigation">
     <ul class="navigation-list">
     {%- for nav in site.data.navigation -%}
       <li class="navigation-item">
-        <span>{{ nav.title }}: <a href="{{ nav.url | relative_url }}">{{ nav.title | replace: "Curriculum Vitae", "CV" | replace: "Google Scholar", "Google Scholar" }}</a></span>
+        <span>{{ nav.title }}: <a href="{{ nav.url | relative_url }}">
+          {%- if nav.title == "Curriculum Vitae" -%}
+            CV
+          {%- elsif nav.title == "Google Scholar" -%}
+            Google Scholar
+          {%- else -%}
+            {{ nav.title }}
+          {%- endif -%}
+        </a></span>
       </li>
     {%- endfor -%}
     </ul>
