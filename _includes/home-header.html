@@ -7,10 +7,6 @@
           <a href="{{ item.url | relative_url }}" class="pure-menu-link {% if page.url == item.url %}current-item{% endif %}">{{ item.title }}</a>
         </li>
       {% endfor %}
-      <!-- 添加 English Bio 导航链接 -->
-      <li class="pure-menu-item">
-        <a href="/" class="pure-menu-link">English Bio</a>
-      </li>
     </ul>
     {% endif %}
   </div>
