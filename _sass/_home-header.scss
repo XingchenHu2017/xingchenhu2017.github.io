@@ -4,26 +4,27 @@
 
 .home-header-bar {
   width: 100%;
-  height: 100%;
+  height: auto; // 设置为 auto 以适应内容高度
 
-  -webkit-box-shadow: 0 1em 1em -.9em var(--border-color);
-     -moz-box-shadow: 0 1em 1em -.9em var(--border-color);
-          box-shadow: 0 1em 1em -.9em var(--border-color);
+  -webkit-box-shadow: 0 1em 1em -1em var(--border-color); // 调整阴影的扩展程度和模糊程度
+     -moz-box-shadow: 0 1em 1em -1em var(--border-color);
+          box-shadow: 0 1em 1em -1em var(--border-color);
 }
 
 .home-header-menu {
   a {
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 1px solid transparent; // 设置透明边框以避免链接在非悬停状态下的下划线
 
     &:hover,
     &:focus {
-      color: inherit;
-      background-color: inherit;
-      border-bottom-color: var(--link-color);
+      color: var(--link-hover-color); // 设置悬停时的颜色
+      background-color: var(--hover-bg-color); // 设置悬停时的背景色
+      border-bottom-color: var(--link-color); // 设置悬停时的下划线颜色
     }
   }
 
   .current-item {
-    border-bottom-color: var(--link-color);
+    font-weight: bold; // 当前项使用粗体表示
+    border-bottom-color: var(--link-color); // 当前项使用特定颜色的下划线
   }
 }
