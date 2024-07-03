@@ -1,5 +1,7 @@
 - title: English Bio
   url: /
+  - title: 中文简介
+  url: /chinese-bio/
 - type: publications
   title: Publications
   url: /publications/
