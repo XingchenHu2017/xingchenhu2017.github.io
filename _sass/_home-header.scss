@@ -1,4 +1,4 @@
-/ Home Header
+v// Home Header
 //
 // Styles for the home header.
 
@@ -17,13 +17,15 @@
 
     &:hover,
     &:focus {
-      color: inherit;
-      background-color: inherit;
-      border-bottom-color: var(--link-color);
+      color: var(--link-hover-color);
+      background-color: var(--hover-bg-color);
+      border-bottom-color: var(--link-hover-color);
     }
   }
 
   .current-item {
-    border-bottom-color: var(--link-color);
+    color: var(--active-link-color);  // 活动链接的颜色
+    background-color: var(--active-bg-color);  // 活动链接的背景色
+    border-bottom: 2px solid var(--active-link-color);  // 加粗并突出显示下划线
   }
 }
