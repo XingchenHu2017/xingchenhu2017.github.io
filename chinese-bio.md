@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: archive-chinese-bio
 title: 中文简介
 permalink: /chinese-bio/
 ---
